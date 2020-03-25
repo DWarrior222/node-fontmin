@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    div(id="fontmin")
+        div(class="text")
+            textarea(name="font", cols="50", rows="5")
+        div(class="font-file")
+            div(class="font-source")
+                input(type="file", value="选择字体", id="file")
+            div(class="generate-font")
+                input(type="button", value="生成字体文件", id="upload-btn")
+        div(class="download-file")
+            a(class="tar-file", href="javascript:;") .tar
+            //- a(class="css-file", href="javascript:;") .css
+            //- a(class="eot-file", href="javascript:;") .eot
+            //- a(class="svg-file", href="javascript:;") .svg
+            //- a(class="ttf-file", href="javascript:;") .ttf
+            //- a(class="woff-file", href="javascript:;") .woff 
+        div(class="webfont") 示例展示：结婚就是给自由穿件棉衣，活动起来不方便，但会很温暖
