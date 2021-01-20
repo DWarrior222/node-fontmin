@@ -11,7 +11,7 @@ function build_image {
   echo "$1 image building..."
   docker build -t $IMAGE_REPOSITORY:$1 $2
   echo "Signing in to docker..."
-  docker login -u luyuan221 --password ${pass}
+  docker login -u luyuan221 --password "${pass}"
   echo "Pushing..."
   docker image push $IMAGE_REPOSITORY:$1
 }
