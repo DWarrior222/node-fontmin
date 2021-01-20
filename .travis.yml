@@ -12,6 +12,7 @@ install:
 - echo "install"
 script: true
 after_success:
+- "./docker.sh"
 - echo "after_success"
 addons:
   ssh_known_hosts: 49.235.241.244
